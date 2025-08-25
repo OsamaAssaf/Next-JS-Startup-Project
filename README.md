@@ -77,7 +77,7 @@ Default translations are located in:
 To add more languages:
 
 1. Create new translation files in the `messages/` folder
-2. Update `core/i18n/navigation.ts` to include the new locale
+2. Update `core/i18n/routing.ts` to include the new locale
 
 ---
 
