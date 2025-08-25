@@ -24,23 +24,25 @@ This project includes **TypeScript, i18n (internationalization), RTL support, UI
 
 ## 📂 Project Structure
 
+```
 src/
-├── app/ # Next.js App Router (pages, layouts, public/private routes)
+├── app/                    # Next.js App Router (pages, layouts, public/private routes)
 ├── core/
-│ ├── components/ # Reusable UI components (Dialog, Snackbar)
-│ ├── i18n/ # Internationalization helpers (navigation, routing, requests)
-│ ├── providers/ # Context providers (RTL support, themes, etc.)
-│ ├── types/ # Shared TypeScript types
-│ └── theme.ts # App-wide theme settings
-└── middleware.ts # Middleware for auth / routing
-messages/ # Translation JSON files (en, ar)
-public/ # Static assets
+│   ├── components/         # Reusable UI components (Dialog, Snackbar)
+│   ├── i18n/              # Internationalization helpers (navigation, routing, requests)
+│   ├── providers/         # Context providers (RTL support, themes, etc.)
+│   ├── types/             # Shared TypeScript types
+│   └── theme.ts           # App-wide theme settings
+└── middleware.ts          # Middleware for auth / routing
+messages/                  # Translation JSON files (en, ar)
+public/                    # Static assets
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repo
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/OsamaAssaf/Next-JS-Startup-Project
@@ -49,80 +51,115 @@ cd next-js-startup-project
 
 ### 2️⃣ Install Dependencies
 
+```bash
 npm install
-
 # or
-
 yarn install
+```
 
-### 3️⃣ Run the Dev Server
+### 3️⃣ Run the Development Server
 
+```bash
 npm run dev
+```
 
-Visit: http://localhost:3000 🎉
-
-🌍 Internationalization (i18n)
-
-Default translations are in:
-
-messages/en.json
-
-messages/ar.json
-
-Add more languages by extending the messages/ folder and updating core/i18n/navigation.ts.
-
-🧩 UI Components
-
-Dialog: Context-powered modal system (core/components/UI/dialog/)
-
-Snackbar: Global notifications (core/components/UI/snackbar/)
-
-These components are reusable and integrated with context providers.
-
-🛡️ Middleware
-
-The middleware.ts file is preconfigured for expansion.
-You can add:
-
-✅ Authentication checks
-
-✅ Localization redirects
-
-✅ Logging or request validations
-
-🛠️ Tech Stack
-
-Next.js 15.5
-
-TypeScript
-
-React Context
-
-ESLint
-
-📦 Scripts
-Command Description
-npm run dev Run development server
-npm run build Build production version
-npm run start Start production server
-npm run lint Run ESLint checks
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to fork the repo and submit a PR 🚀.
-
-📄 License
-
-This project is MIT Licensed – free to use for personal and commercial projects.
-
-👨‍💻 Author
-
-Developed by Osama Assaf
-
-💡 Aimed to help startups launch faster with a solid Next.js foundation.
+Visit: **http://localhost:3000** 🎉
 
 ---
 
-👉 This version **completes your existing README.md** with all the missing sections, ready to publish on GitHub.
+## 🌍 Internationalization (i18n)
 
-Do you also want me to generate a **`LICENSE` file (MIT)** to match the badge in your README?
+Default translations are located in:
+
+- `messages/en.json` - English translations
+- `messages/ar.json` - Arabic translations
+
+To add more languages:
+
+1. Create new translation files in the `messages/` folder
+2. Update `core/i18n/navigation.ts` to include the new locale
+
+---
+
+## 🧩 UI Components
+
+### Dialog Component
+
+- **Location**: `core/components/UI/dialog/`
+- **Features**: Context-powered modal system
+- **Usage**: Reusable modal dialogs with context providers
+
+### Snackbar Component
+
+- **Location**: `core/components/UI/snackbar/`
+- **Features**: Global notifications
+- **Usage**: Toast notifications integrated with context providers
+
+Both components are fully reusable and integrated with React Context for state management.
+
+---
+
+## 🛡️ Middleware
+
+The `middleware.ts` file is preconfigured for easy expansion. You can add:
+
+- ✅ **Authentication checks**
+- ✅ **Localization redirects**
+- ✅ **Logging or request validations**
+- ✅ **Custom routing logic**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 15.5** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript
+- **React Context** - State management
+- **ESLint** - Code linting and formatting
+
+---
+
+## 📦 Available Scripts
+
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Run development server   |
+| `npm run build` | Build production version |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Run ESLint checks        |
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Osama Assaf**
+
+💡 This project is designed to help startups launch faster with a solid Next.js foundation.
+
+---
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_Ready to build something amazing? Start with this solid foundation! 🚀_
